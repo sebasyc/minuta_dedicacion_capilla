@@ -1,0 +1,109 @@
+@import 'variables';
+
+body {
+    font-family: $poppins;
+    font-size: 100%;
+}
+
+.main {
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url('../images/bg-page.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        padding: 1.5em 15px 0;
+        .box-top-title {
+            color: white;
+            text-align: center;
+            h1 {
+                font-size: 1.25em;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: 1em;
+                font-weight: 600;
+            }
+            h3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: .875em;
+                font-weight: 400;
+                i {
+                    display: block;
+                    padding: 0 .35em 0 .75em;
+                }
+            }
+            h4 {
+                display: inline-block;
+                margin: .5em 0 0;
+                padding: 5px 1em;
+                background-color: white;
+                color: $primary-color;
+                text-transform: uppercase;
+                border-radius: 50px;
+                font-size: .875em;
+                font-weight: 700;
+            }
+        }
+        .box-detail {
+            padding: 1.5em 0 0;
+            color: white;
+            &__list {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                margin: 0 0 .25em;
+                list-style: none;
+                li {
+                    width: 60%;
+                    padding: 0 10px;
+                    span {
+                        display: block;
+                        padding: .25em 0;
+                        font-size: .875em;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: .25em 1em;
+                        background-color: white;
+                        color: $primary-color;
+                        font-size: .875em;
+                        font-weight: 500;
+                        text-decoration: none;
+                        border-radius: 50px;
+                        strong {
+                            display: block;
+                            font-size: 1.25em;
+                            margin-right: .25em;
+                        }
+                        i {
+                            display: block;
+                            margin-left: .5em;
+                            font-size: 1.5em;
+                        }
+                    }
+                    &:first-child {
+                        width: 40%;
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .img-chapel {
+            img {
+                width: 450px;
+            }
+        }
+    }
+}
